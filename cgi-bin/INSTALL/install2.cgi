@@ -28,13 +28,13 @@ echo "<br>"
 echo "<p>Now add this Servers IP or Hostname/FQDN</p>"
 echo "<p>Currently your ENV shows your server at:</p>"
 echo "<pre>$(echo $SERVER_ADDR)</pre>"
-echo "<p>If correct enter it(the ip address) in the form below and click submit</p>"
+echo "<p>If this is the correct IP, pre-entered the form below and click submit</p>"
 echo "<p>If you don't want use ip address, enter its hostname/fqdn instead</pr>"
 echo "<p>This will be your apache/cgi/ffmpeg live HLS_SERVER</p>"
 echo '<form action="/cgi-bin/INSTALL/setuphlsserver.cgi" method="post">
   <label for="HLS_SERVER">ip hostname or fqdn</label><br>
   <br>
-  <input type="text" id="HLS_SERVER" name="HLS_SERVER" value=><br>
+  <input type="text" id="HLS_SERVER" name="HLS_SERVER" value='$SERVER_ADDR'><br>
   <input type="submit" value="Submit">
 </form>'
 
