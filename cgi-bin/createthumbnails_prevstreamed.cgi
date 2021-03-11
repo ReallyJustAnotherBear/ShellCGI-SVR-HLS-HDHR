@@ -1,6 +1,6 @@
 #!/bin/bash
 # (c) 2021-01-12 Kelsie Flynn
-# License GPL2
+# License MIT
 #createthumbnails_prevstreamed.cgi
 set -o posix
 printf "Content-type: text/html\n\n"

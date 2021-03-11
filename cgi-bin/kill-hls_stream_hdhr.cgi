@@ -1,6 +1,6 @@
 #!/bin/bash
 # (c) 2021-03-05 Kelsie Flynn
-# License GPL2
+# License MIT
 #kill-hls_stream_hdhr.cgi
 set -o posix
 echo "Content-type: text/html"

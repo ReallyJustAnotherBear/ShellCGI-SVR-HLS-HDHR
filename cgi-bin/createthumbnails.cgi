@@ -1,6 +1,6 @@
 #!/bin/bash
 # (c) 2021-01-12 Kelsie Flynn
-# License GPL2
+# License MIT
 set -o posix
 echo 'Content-type: text/html'
 echo ""

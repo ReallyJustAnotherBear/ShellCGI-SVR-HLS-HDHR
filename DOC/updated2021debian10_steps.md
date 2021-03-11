@@ -1,5 +1,5 @@
 <sup><sub>(c) 2021-01-12 Kelsie Flynn<br>
-License GPL2</sub></sup>
+License MIT</sub></sup>
 
 
 ### *This is not a real install script, just the steps from several parts strung together here until further long term integration.

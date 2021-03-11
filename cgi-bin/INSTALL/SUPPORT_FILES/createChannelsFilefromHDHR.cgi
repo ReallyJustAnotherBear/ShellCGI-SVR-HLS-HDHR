@@ -1,6 +1,6 @@
 #!/bin/bash
 # (c) 2021-01-12 Kelsie Flynn
-# License GPL2
+# License MIT
 #createChannelsFilefromHDHR.cgi
 #check for programs/cmds/utilities to be used here first or exit and suggest
 #check for xmlstarlet, if ok, continue, else suggest they install with apt/yum package mgr, then exit 1
