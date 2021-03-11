@@ -30,3 +30,16 @@ Testing Server: on macos 11.x on M1
 ![BigSur](/bigsur.png)
 
 ***
+
+***
+Firefox/Vlc
+![firefox-vlc1](/firefox-vlc1.png)
+
+***
+
+Another Firefox/Vlc
+![firefox-vlc2](/firefox-vlc2.png)
+
+
+
+
