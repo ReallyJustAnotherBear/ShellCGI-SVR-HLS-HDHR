@@ -29,17 +29,10 @@ echo " "
 echo "<h4>If you have apache but CGI unconfigured this install will fail by doing nothing</h4>"
 echo " "
 echo ""
-echo "<h4>dependencies:</h4>"
-echo "<p><i>Please ensure you have ffmpeg,ffmpegthumbnailer,xmlstarlet installed prior to starting</i></p>"
-echo "For debian based OS"
-echo "<p>apt-get install ffmpeg ffmpegthumbnailer xmlstarlet</p>"
-echo "For redhat based OS"
-echo "<p>yum install ffmpeg ffmpegthumbnailer xmlstarlet</p>"
-
 echo "<br>"
 echo "When your ready."
 echo '<form action="/cgi-bin/INSTALL/setuphdhr.cgi" method="post">
-  <label for="HDHR_IP">Enter your HDHOMERUN IP</label><br>
+  <label for="HDHR_IP">Enter your HDHOMERUN IP or will use default hdhomerun.local</label><br>
   <input type="text" id="HDHR_IP.cgi" name="HDHR_IP" value=><br>
   <input type="submit" value="Submit">
 </form>'
