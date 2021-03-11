@@ -1,1 +1,1 @@
-HDHR_IP=192.168.168.2
+HDHR_IP=hdhomerun.local
