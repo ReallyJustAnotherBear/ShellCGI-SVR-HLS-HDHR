@@ -82,6 +82,9 @@ echo $CONTENT > $FFOUTVCODEC
 echo "<pre>$($CGIBIN_DIR/INSTALL/quicksetup.cgi)</pre>"
 echo "<pre>$($CGIBIN_DIR/INSTALL/createChannelLinks.cgi)</pre>"
 
+echo "Copying over ffmpeg binary hls_stream_hdhr"
+cp -av $(which ffmpeg) $CGIBIN_DIR
+
 
 echo "<h2>Thank you.</h2>"
 echo "Serverinfo"
