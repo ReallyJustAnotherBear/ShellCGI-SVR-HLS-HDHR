@@ -1,8 +1,9 @@
 #!/bin/bash
 # (c) 2021-01-12 Kelsie Flynn
-# License MIT
+# License GPL2
 #ffmpegprocs.cgi
 set -o posix
+. $(dirname "$0")/HDHR_IP.cgi
 . $(dirname "$0")/HLS_SERVER.cgi
 . $(dirname "$0")/HTTP_HLSDIR.cgi
 echo "Content-type: text/html"
@@ -75,9 +76,8 @@ else
         echo "</body></html>"
         exit 1
 fi
-
+echo "<pre>Using Device HDHR@$HDHR_IP</pre>"
 echo "</div>"
-
 #even though we use a specific primary stream binary now of ffmpeg (hls_stream_hdhr). 
 #We still use ffmpeg as well for now for the m3u8>mp4 conversions.
 #may switch to a conversion process name for it in future as well to make process management even more simple and potentially more portable.
@@ -191,7 +191,7 @@ if [ $retval -eq 1 ]; then
 				else
 					#primary fast method testing using m3u8 protocol.
 			    		#kill a conversion process, if hung or if not done after 140 seconds +10, with signal 9
-			    		$(timeout -k10 -s9 140 setsid ffmpeg -n -i $i -c copy ${i/m3u8/mp4} &>/dev/null&)
+			    		$(timeout -k10 -s9 140 setsid ffmpeg -n -protocol_whitelist file,http,tcp -i $i -c copy ${i/m3u8/mp4} &>/dev/null&)
 			    		echo "OUTPUT_QUEUE:  		 ${i%%/playlist.m3u8}/playlist.mp4"
 				fi
 				echo "</div>"
@@ -224,7 +224,7 @@ if [ $retval -eq 1 ]; then
 			    		$(printf "file '%s'\n" ${i%%playlist.m3u8}*.ts > ${i%%playlist.m3u8}/$(basename ${i%%playlist.m3u8}).tsplaylist.txt)
 			    		echo "assembling segments"
 					#assemble mp4 in background, timeout after 5minutes, force kill proc after 5:10seconds with signal 9
-			    		setsid /usr/bin/timeout -k10 -s9 5m ffmpeg -y -f concat -safe 0 -i ${i%%playlist.m3u8}$(basename ${i%%playlist.m3u8}).tsplaylist.txt \
+			    		setsid /usr/bin/timeout -k10 -s9 5m ffmpeg -protocol_whitelist file,http,tcp -y -f concat -safe 0 -i ${i%%playlist.m3u8}$(basename ${i%%playlist.m3u8}).tsplaylist.txt \
 			       		-c copy ${i%%/playlist.m3u8}/playlist.mp4 &>/dev/null& 
 			    		echo "OUTPUT_QUEUE_STAGE2:	${i%%/playlist.m3u8}/playlist.mp4"
 			 		#echo "<br>"

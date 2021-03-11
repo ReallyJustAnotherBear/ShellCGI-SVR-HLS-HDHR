@@ -1,6 +1,6 @@
 #!/bin/bash
 # (c) 2021-01-12 Kelsie Flynn
-# License MIT
+# License GPL2
 set -o posix
 echo 'Content-type: text/html'
 echo ""
@@ -109,6 +109,7 @@ fi
 #this will be used in next section below after  a basic hls_stream_hdhr pretest
 CHANNELSTXT=$HTML_DIR/channels.txt
 CH1=$(head -n1 $CHANNELSTXT)
+echo "<pre>Using Device HDHR@$HDHR_IP</pre>"
 echo "<pre>$(cat $CHANNELSTXT|wc -l) channels</pre>"
 echo "<pre>1st channel is $(echo $CH1) </pre>"
 echo "<pre>Testing first channel: $CH1</pre>"
