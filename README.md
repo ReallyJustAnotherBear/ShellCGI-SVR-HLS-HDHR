@@ -1,4 +1,4 @@
 # ShellCGI-SVR-HLS-HDHR
 
 MIT Lic.
-Any products not my own have thier own respective licenses.
+Note: Any code/scripts/binaries not my own have their own respective licenses.
