@@ -291,7 +291,7 @@ echo "<div>"
 #
 echo "<p>Checking tuner/channel for availability</p>"
 #echo "<pre>$(echo ffprobe -f mpegts -i "http://$HDHR_IP:$HDHR_PORT/$HDHR_TUNER/v$CHANNEL/?duration=1" 2>/dev/null)</pre>"
-echo "<pre>$(ffprobe -f mpegts -i "http://$HDHR_IP:$HDHR_PORT/$HDHR_TUNER/v$CHANNEL/?duration=1" >/dev/null)</pre>"
+echo "<pre>$(ffprobe -f mpegts -i "http://$HDHR_IP:$HDHR_PORT/$HDHR_TUNER/v$CHANNEL?duration=1" >/dev/null)</pre>"
 FFPRETVAL=$?
 
 if [ $FFPRETVAL -eq '1' ]; then
