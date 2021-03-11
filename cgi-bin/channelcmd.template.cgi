@@ -32,6 +32,10 @@ echo "<div>"
 #prelaunch check
 [[ "$(command -v bash)" ]] || { echo "bash is not installed" 1>&2 ; exit 1; }
 
+
+
+[[ "$(command -v hls_stream_hdhr)" ]] || { echo "hls_stream_hdhr is not installed" 1>&2 ; exit 1; }
+
 #what host os?
 #this sets up our CGIBIN_DIR and APACHE_USER
 if [ $(uname) = 'Linux' ]; then
@@ -83,6 +87,7 @@ echo "<div>"
 
 . $(dirname "$0")/HDHR_IP.cgi #hdhr ip/hostname/fqdn referenced from external file
 . $(dirname "$0")/HDHR_TUNER.cgi #hdhr tuner reference
+
 
 #Check to make sure our ffmpeg copy(hls_stream_hdhr) for the primary stream  is NOT running as apache/httpd user process 
 #the default below is a return value of 1, which means no matching process, proceeding to else
