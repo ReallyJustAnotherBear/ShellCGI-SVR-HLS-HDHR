@@ -1,6 +1,6 @@
 # ShellCGI-SVR-HLS-HDHR
 
-Shell Scripting and Documents are MIT Licenced.
+Shell Scripts and Documents are MIT Licenced.
 
 Note: Any code/scripts/binaries not my own, have their own respective licenses.
 
