@@ -59,7 +59,7 @@ When promted from forms:
    
 Now as root usr run quicksetup.cgi as the apache user(www-data) against your HDHR IP
  Replacing my ip '192.168.1.218' with your hdhr ip
- ```su -s /bin/bash -c '/usr/lib/cgi-bin/INSTALL/quicksetup.cgi 192.168.1.218' 'www-data'```
+ ```su -s /bin/bash -c '/usr/lib/cgi-bin/INSTALL/quicksetup.cgi' 'www-data'```
        
    a good run should be similar to:
    ```
