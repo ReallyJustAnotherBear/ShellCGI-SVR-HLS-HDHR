@@ -58,7 +58,7 @@ parole
 
 totem
 ***
-![gmplayer](/gmplayer.png)
+![totem](/totem.png)
 
 
 
