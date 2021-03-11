@@ -68,16 +68,10 @@ echo $CGIBIN_DIR
 HDHRIP="$CGIBIN_DIR/HDHR_IP.cgi"
 
 read CONTENT
-#validation here needed
-#grep then digit?
-#or
-#if [ "$CONTENT" == "[[:digit:]]" ]; then
-#if [ "$CONTENT" == "192.168.1.218:8888" ]; then
-#    echo "$CONTENT" > $HDHRIP
-#fi
 
-#when validated
-#echo $VALIDCONTENT > $HDHRIP
+#no validation needed using hdhomerun.local or hdhr-xxxxxxx.local or xxxxxxx.local, where xxxxxxxx=deviceid(mac address)
+
+
 echo $CONTENT > $HDHRIP
 
 
