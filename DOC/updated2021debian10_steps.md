@@ -11,7 +11,7 @@ Update OS
 ```apt-get update -y && apt-get upgrade -y```
 
 Add packages/add apache too if it isnt already installed
-```apt-get install -y curl ffmpeg ffmpegthumbnailer git libnss-mdns unzip xmlstarlet```
+```apt-get install -y curl ffmpeg ffmpegthumbnailer git jq libnss-mdns unzip xmlstarlet```
 
 enable cgi module for apache
 ```/sbin/a2enmod cgid```
