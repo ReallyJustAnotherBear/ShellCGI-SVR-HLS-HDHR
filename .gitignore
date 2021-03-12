@@ -2,8 +2,8 @@
 /*/
 *.png
 README.md
-!.gitignore
-!LICENSE
+!/.gitignore
+!/LICENSE
 !/DOC/
 !/cgi-bin/
 !/html/
