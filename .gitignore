@@ -1,7 +1,7 @@
 /*
 /*/
 *.png
-PNGS
+PNGS/
 !/.gitignore
 !/LICENSE
 !/DOC/
