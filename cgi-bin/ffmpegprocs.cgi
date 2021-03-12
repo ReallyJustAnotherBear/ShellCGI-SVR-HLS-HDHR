@@ -69,7 +69,7 @@ echo "<div class="w3-text-light-green">"
 echo "<pre>Configured to use HDHR Device at: $HDHR_IP</pre>"
 TUNER1VCTSTATUS=$(curl -s hdhomerun.local/status.json | jq -r '.[1].VctNumber')
 TUNER1IPSTATUS=$(curl -s hdhomerun.local/status.json | jq -r '.[1].TargetIP')
-if [ $TUNER1VCTSTATUS != 'null' ] -a [ $TUNER1IPSTATUS != $HLS_SERVER ];then
+if ([ $TUNER1VCTSTATUS != 'null' ] | [ $TUNER1IPSTATUS != $HLS_SERVER ]);then
 	echo "Configured Device busy/resource locked with Channel=$TUNER1VCTSTATUS for Host with IP=$TUNER1IPSTATUS"
 fi
 echo "</div>"
