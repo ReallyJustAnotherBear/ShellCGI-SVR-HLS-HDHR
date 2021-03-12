@@ -28,7 +28,7 @@ clone repo
 ```git clone https://github.com/ReallyJustAnotherBear/ShellCGI-SVR-HLS-HDHR```
 
 #todo autoinstall
-# ```su -s /bin/bash -c '/usr/lib/cgi-bin/INSTALL/PRE_install_COPYFILES.cgi' 'www-data'```
+ ```su -s /bin/bash -c '/usr/lib/cgi-bin/INSTALL/PRE_install_COPYFILES.cgi' 'www-data'```
 
 
 manual 
