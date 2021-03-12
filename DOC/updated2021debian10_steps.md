@@ -1,7 +1,6 @@
 License MIT</sub></sup>
 
 
-### *This is not a real install script, just the steps from several parts strung together here until further long term integration.
 #### installdebian10_steps.md
 <br>
 *Install simulation on Debian Netboot 10.7
