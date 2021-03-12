@@ -1,0 +1,10 @@
+[[ -z "${parameter/X/Y }" ]]
+Expands the parameter variables and replaces all matches of pattern X with Y
+
+[[ -z "${parameter// }" ]]
+Expands the parameter variables and replaces all matches of pattern space with a space/removes a space
+
+#first match
+${parameter// } to delete all spaces.
+#all occurances
+${parameter/// } to delete all spaces.
