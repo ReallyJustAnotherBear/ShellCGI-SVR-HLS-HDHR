@@ -27,7 +27,7 @@ Note: Any code/scripts/binaries not my own, have their own respective licenses.
 ***
 Testing Server: on macos 11.x on M1
 
-![BigSur](/PNGS/bigsur.png)
+![BigSur2](/PNGS/bigsur2.png)
 
 ***
 
