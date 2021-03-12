@@ -40,7 +40,7 @@ if [ $(uname) = 'Linux' ]; then
         if [ -f /etc/debian_version ]; then
                 echo "Debian based OS"
                 echo "<br>"
-		echo "$(cat /etc/debian_version)"
+		echo "v$(cat /etc/debian_version)"
                 echo "<br>"
                 #echo "CGIBIN_DIR='/usr/lib/cgi-bin'"
                 #echo "<br>"
@@ -52,7 +52,7 @@ if [ $(uname) = 'Linux' ]; then
         elif [ -f /etc/redhat-release ];then
                 echo "RedHat based OS"
                 echo "<br>"
-		echo "$(cat /etc/redhat-release)"
+		echo "v$(cat /etc/redhat-release)"
                 echo "<br>"
                 #echo "CGIBIN_DIR='/var/www/cgi-bin'"
                 #echo "<br>"
