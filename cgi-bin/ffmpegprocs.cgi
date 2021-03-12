@@ -114,7 +114,7 @@ pgrepffmpeg_func() {
 if [ $retval -eq 1 ]; then
 	echo "<h4>"
 	echo "<div class="w3-text-yellow">"
-	echo "<pre><small><i><p>Streaming not detected, not showing 'stop/watch' buttons for stream control.</p></i></small></pre>"
+	echo "<pre><small><i><p>Local Streaming not detected, not showing 'stop/watch' buttons for stream control.</p></i></small></pre>"
 	echo "<pre><small><i>During FFmpeg idle/page refresh, HLS segments are combined into Single mp4 files.</i></small></pre>"
 	echo "</div>"
         echo "<hr>"
