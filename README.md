@@ -9,6 +9,7 @@ Note: Any code/scripts/binaries not my own, have their own respective licenses.
 
 
 *new hdhr tuner status detection routines
+*Stream started on (172)
 ![chromium1](/PNGS/chromium1.png)
 
 ***
