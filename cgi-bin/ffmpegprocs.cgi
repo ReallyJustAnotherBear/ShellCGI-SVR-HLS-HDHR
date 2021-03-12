@@ -67,6 +67,11 @@ else
 fi
 echo "<div class="w3-text-light-green">"
 echo "<pre>Using HDHR Device at: $HDHR_IP</pre>"
+TUNER1VCTSTATUS=$(curl -s hdhomerun.local/status.json | jq -r '.[1].VctNumber')
+TUNER1IPSTATUS=$(curl -s hdhomerun.local/status.json | jq -r '.[1].TargetIP')
+if [ $TUNER1VCTSTATUS != 'null' ];then
+	echo "Device busy/resource locked with Channel=$TUNER1VCTSTATUS for Host with IP=$TUNER1IPSTATUS"
+fi
 echo "</div>"
 #even though we use a specific primary stream binary now of ffmpeg (hls_stream_hdhr). 
 #We still use ffmpeg as well for now for the m3u8>mp4 conversions.
